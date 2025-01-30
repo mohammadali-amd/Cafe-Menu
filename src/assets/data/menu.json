@@ -1,0 +1,160 @@
+{
+   "categories": [
+      {
+         "category":"نوشیدنی گرم",
+         "image": "/icons/coffee-cup.png",
+         "items": [
+            {
+               "title": "اسپرسو",
+               "price": 200000,
+               "image": "/icons/coffee-cup.png",
+               "ingredients": "Rice, Kebab"
+            },
+            {
+               "title": "کارامل ماکیاتو",
+               "price": 150000,
+               "image": "/icons/coffee-cup.png"
+            },
+            {
+               "title": "دویسو",
+               "price": 150000,
+               "image": "/icons/coffee-cup.png"
+            },
+            {
+               "title": "آمریکانو",
+               "price": 50000,
+               "image": "/icons/coffee-cup.png"
+            }
+         ]
+      },
+      {
+         "category":"نوشیدنی سرد",
+         "image": "/icons/iced-coffee.png",
+         "items": [
+            {
+               "title": "نوشابه کوکاکولا",
+               "price": 200000,
+               "image": "/icons/iced-coffee.png"
+            },
+            {
+               "title": "لیموناد",
+               "price": 150000,
+               "image": "/icons/iced-coffee.png"
+            },
+            {
+               "title": "دوغ",
+               "price": 150000,
+               "image": "/icons/iced-coffee.png"
+            },
+            {
+               "title": "آب معدنی",
+               "price": 50000,
+               "image": "/icons/iced-coffee.png"
+            }
+         ]
+      },
+      {
+         "category": "دمنوش",
+         "image": "/icons/green-tea.png",
+         "items": [
+            {
+               "title": "بهار نارنج",
+               "price": 500000,
+               "ingredients": "Rice, Kebab",
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "آویشن",
+               "price": 100000,
+               "ingredients": "Vegetables, Onion, Tomatoe",
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "دمنوش ترش",
+               "price": 400000,
+               "ingredients": "Rice, Chicken",
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "بابونه",
+               "price": 400000,
+               "ingredients": "Rice, Chicken",
+               "image": "/icons/green-tea.png"
+            }
+         ]
+      },
+      {
+         "category":"قلیان",
+         "image": "/icons/hookah.png",
+         "items": [
+            {
+               "title": "دو سیب",
+               "price": 500000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "دو سیب آلبالو",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "سیب یخ",
+               "price": 400000,
+               "image": "/icons/hookah.png"
+            }
+         ]
+      },
+      {
+         "category":"سیب زمینی",
+         "image": "/icons/fried-potatoes.png",
+         "items": [
+            {
+               "title": "سیب زمینی بزرگ",
+               "price": 500000,
+               "image": "/icons/fried-potatoes.png"
+            },
+            {
+               "title": "سیب زمینی کوچک",
+               "price": 100000,
+               "image": "/icons/fried-potatoes.png"
+            }
+         ]
+      },
+      {
+         "category":"غذاهای گرم",
+         "image": "/icons/biryani.png",
+         "items": [
+            {
+               "title": "بال کبابی",
+               "price": 500000,
+               "ingredients": "Rice, Kebab",
+               "image": "/icons/biryani.png"
+            },
+            {
+               "title": "جوجه کباب",
+               "price": 100000,
+               "ingredients": "Vegetables, Onion, Tomatoe",
+               "image": "/icons/biryani.png"
+            },
+            {
+               "title": "کوبیده",
+               "price": 400000,
+               "ingredients": "Rice, Chicken",
+               "image": "/icons/biryani.png"
+            },
+            {
+               "title": "نثار",
+               "price": 100000,
+               "ingredients": "Vegetables, Onion, Tomatoe",
+               "image": "/icons/biryani.png"
+            },
+            {
+               "title": "وزیری",
+               "price": 100000,
+               "ingredients": "Vegetables, Onion, Tomatoe",
+               "image": "/icons/biryani.png"
+            }
+         ]
+      }
+   ]
+}
