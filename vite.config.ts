@@ -1,33 +1,74 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import { VitePWA } from 'vite-plugin-pwa';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import { VitePWA } from "vite-plugin-pwa";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
     VitePWA({
-      registerType: 'autoUpdate',
-      manifest: {
-        name: 'My React PWA',
-        short_name: 'ReactPWA',
-        description: 'A React PWA with Vite and Tailwind CSS',
-        theme_color: '#ffffff',
-        icons: [
+      registerType: "autoUpdate",
+      includeAssets: ["/icons/coffee-cup.png"],
+      devOptions: {
+        enabled: true, // Enable PWA in development mode
+        type: "module",
+      },
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,png,svg,ico}"], // Cache all static assets
+        runtimeCaching: [
           {
-            src: 'icon-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
+            urlPattern: /^https:\/\/api\.example\.com\/.*/, // Cache API requests
+            handler: "NetworkFirst", // Use network-first strategy
+            options: {
+              cacheName: "api-cache",
+              expiration: {
+                maxEntries: 50, // Cache up to 50 requests
+                maxAgeSeconds: 60 * 60 * 24, // Cache for 1 day
+              },
+            },
           },
           {
-            src: 'icon-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
+            urlPattern: /\.(png|jpg|jpeg|svg|ico)$/, // Cache images
+            handler: "CacheFirst", // Use cache-first strategy
+            options: {
+              cacheName: "image-cache",
+              expiration: {
+                maxEntries: 100, // Cache up to 100 images
+                maxAgeSeconds: 60 * 60 * 24 * 30, // Cache for 30 days
+              },
+            },
+          },
+          {
+            urlPattern: /\/data\/menu\.json/, // Cache your menu.json
+            handler: "NetworkFirst", // Use network-first strategy
+            options: {
+              cacheName: "menu-cache",
+              expiration: {
+                maxEntries: 1, // Cache only one version
+                maxAgeSeconds: 60 * 60 * 24, // Cache for 1 day
+              },
+            },
+          },
+        ],
+      },
+      manifest: {
+        name: "Cafe Menu",
+        short_name: "CafeMenu",
+        description: "Digital menu for cafe restaurant",
+        theme_color: "#000000",
+        background_color: "#000000",
+        display: "standalone",
+        scope: "/",
+        start_url: "/",
+        icons: [
+          {
+            src: "/icons/coffee-cup.png",
+            sizes: "128x128",
+            type: "image/png",
           },
         ],
       },
     }),
   ],
-})
+});
