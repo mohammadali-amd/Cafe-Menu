@@ -21,13 +21,15 @@ const InformationPage = () => {
 
   const handleInstall = useCallback(() => {
     console.log("111");
-    if (!deferredPrompt) {
+    if (deferredPrompt) {
       console.log("222");
       deferredPrompt.prompt();
       deferredPrompt.userChoice.then(() => {
         setDeferredPrompt(null);
       });
       console.log("333");
+    } else {
+      console.log("beforeinstallprompt event is not available");
     }
   }, [deferredPrompt]);
 
@@ -49,6 +51,17 @@ const InformationPage = () => {
           <button
             onClick={handleInstall}
             className="py-1 px-4 rounded bg-yellow-500 mt-2"
+          >
+            نصب برنامه
+          </button>
+          <button
+            onClick={handleInstall}
+            disabled={!deferredPrompt}
+            className={`py-1 px-4 rounded mt-2 ${
+              deferredPrompt
+                ? "bg-yellow-500"
+                : "bg-gray-400 cursor-not-allowed"
+            }`}
           >
             نصب برنامه
           </button>
