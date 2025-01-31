@@ -4,11 +4,76 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Offline</title>
+   <link rel="icon" type="image/svg+xml" href="/icons/coffee-cup.png" />
+   <title>Offline - Cafe Menu</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Arial, sans-serif;
+      }
+
+      body {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         background-color: #f8f9fa;
+         text-align: center;
+      }
+
+      .container {
+         background: white;
+         padding: 2rem;
+         margin: 2rem;
+         border-radius: 10px;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+         max-width: 400px;
+      }
+
+      .icon {
+         font-size: 60px;
+         color: #ff6b6b;
+         margin-bottom: 1rem;
+      }
+
+      h1 {
+         font-size: 24px;
+         color: #333;
+         margin-bottom: 1rem;
+      }
+
+      p {
+         color: #666;
+         margin-bottom: 1.5rem;
+      }
+
+      .refresh-btn {
+         background-color: #ff6b6b;
+         color: white;
+         border: none;
+         padding: 10px 20px;
+         border-radius: 5px;
+         cursor: pointer;
+         font-size: 16px;
+         transition: background 0.3s;
+      }
+
+      .refresh-btn:hover {
+         background-color: #e63946;
+      }
+   </style>
 </head>
 
 <body>
-   Check your internet and come back again.
+   <div class="container">
+      <i class="fas fa-wifi icon"></i>
+      <h1>You're Offline</h1>
+      <p>It looks like you lost your internet connection. Please check your network and try again.</p>
+      <button class="refresh-btn" onclick="location.reload()">Retry</button>
+   </div>
 </body>
 
 </html>

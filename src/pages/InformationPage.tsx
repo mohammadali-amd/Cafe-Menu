@@ -1,29 +1,16 @@
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const InformationPage = () => {
-  const [installPrompt, setInstallPrompt] =
-    useState<BeforeInstallPromptEvent | null>(null);
-  const [isInstalled, setIsInstalled] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState<any | null>(null);
 
   useEffect(() => {
-    const handleBeforeInstallPrompt = (e: BeforeInstallPromptEvent) => {
-      e.preventDefault(); // Prevent the default mini-infobar
-      setInstallPrompt(e); // Save the event for later use
+    const handleBeforeInstallPrompt = (event: any) => {
+      event.preventDefault();
+      setDeferredPrompt(event);
     };
 
-    // Check if the app is already installed
-    const checkIfInstalled = () => {
-      const isStandalone = window.matchMedia(
-        "(display-mode: standalone)"
-      ).matches;
-      setIsInstalled(isStandalone);
-    };
-
-    // Listen for the beforeinstallprompt event
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
-    checkIfInstalled(); // Check on initial load
 
-    // Cleanup
     return () => {
       window.removeEventListener(
         "beforeinstallprompt",
@@ -32,25 +19,17 @@ const InformationPage = () => {
     };
   }, []);
 
-  const handleInstallClick = async () => {
-    if (!installPrompt) return;
-
-    // Show the install prompt
-    installPrompt.prompt();
-
-    // Wait for the user to respond
-    const { outcome } = await installPrompt.userChoice;
-
-    if (outcome === "accepted") {
-      console.log("User accepted the install prompt");
-      setIsInstalled(true);
-    } else {
-      console.log("User dismissed the install prompt");
+  const handleInstall = useCallback(() => {
+    console.log("111");
+    if (!deferredPrompt) {
+      console.log("222");
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(() => {
+        setDeferredPrompt(null);
+      });
+      console.log("333");
     }
-
-    // Clear the saved prompt
-    setInstallPrompt(null);
-  };
+  }, [deferredPrompt]);
 
   return (
     <div className="p-4">
@@ -67,15 +46,12 @@ const InformationPage = () => {
         </div>
         <div className="py-2">
           <h3 className="font-semibold text-lg">نصب</h3>
-          {installPrompt && !isInstalled && (
-            <button
-              onClick={handleInstallClick}
-              className="bg-green-500 text-white px-4 py-2 rounded-lg w-full"
-            >
-              نصب برنامه
-            </button>
-          )}
-          {isInstalled && <p className="text-green-600">برنامه نصب شده است</p>}
+          <button
+            onClick={handleInstall}
+            className="py-1 px-4 rounded bg-yellow-500 mt-2"
+          >
+            نصب برنامه
+          </button>
         </div>
         <div className="flex flex-col gap-2 py-2">
           <h3 className="font-semibold text-lg">آدرس</h3>
@@ -93,19 +69,3 @@ const InformationPage = () => {
 };
 
 export default InformationPage;
-
-// Add this type definition for TypeScript
-interface BeforeInstallPromptEvent extends Event {
-  readonly platforms: string[];
-  readonly userChoice: Promise<{
-    outcome: "accepted" | "dismissed";
-    platform: string;
-  }>;
-  prompt(): Promise<void>;
-}
-
-declare global {
-  interface WindowEventMap {
-    beforeinstallprompt: BeforeInstallPromptEvent;
-  }
-}
