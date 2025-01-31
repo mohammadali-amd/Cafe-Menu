@@ -9,7 +9,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["/icons/coffee-cup.png"],
+      includeAssets: ["/icons/icon144x144.png"],
       devOptions: {
         enabled: true, // Enable PWA in development mode
         type: "module",
@@ -63,7 +63,7 @@ export default defineConfig({
         start_url: "/",
         icons: [
           {
-            src: "/icons/coffee-cup.png",
+            src: "/icons/icon144x144.png",
             sizes: "128x128",
             type: "image/png",
           },

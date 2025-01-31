@@ -2,7 +2,7 @@ const CACHE_NAME = 'flashbaz';
 const urlsToCache = [
    '/',
    '/offline.html',
-   '/icons/coffee-cup.png',
+   '/icons/icon144x144.png',
 ];
 
 self.addEventListener('install', event => {
