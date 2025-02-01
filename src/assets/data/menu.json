@@ -24,6 +24,36 @@
                "title": "آمریکانو",
                "price": 50000,
                "image": "/icons/coffee-cup.png"
+            },
+            {
+               "title": "کاپوچینو",
+               "price": 150000,
+               "image": "/icons/coffee-cup.png"
+            },
+            {
+               "title": "لاته",
+               "price": 150000,
+               "image": "/icons/coffee-cup.png"
+            },
+            {
+               "title": "موکا",
+               "price": 150000,
+               "image": "/icons/coffee-cup.png"
+            },
+            {
+               "title": "نسکافه",
+               "price": 150000,
+               "image": "/icons/coffee-cup.png"
+            },
+            {
+               "title": "هات چاکلت",
+               "price": 150000,
+               "image": "/icons/coffee-cup.png"
+            },
+            {
+               "title": "چای",
+               "price": 150000,
+               "image": "/icons/coffee-cup.png"
             }
          ]
       },
@@ -100,6 +130,76 @@
             {
                "title": "سیب یخ",
                "price": 400000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "لاو",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "شب های مسکو",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "لیدی کلیر",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "شهریار",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "پرتقال",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "پرتقال نعناع",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "پرتقال خامه",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "لیمو نعناع",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "بلوبری",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "بلوبریآدامس دارچین",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "هلو",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "کاپوچینو",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "شات توت بستنی",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "هندوانه",
+               "price": 100000,
                "image": "/icons/hookah.png"
             }
          ]
