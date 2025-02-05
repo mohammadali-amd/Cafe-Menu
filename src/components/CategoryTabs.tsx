@@ -29,6 +29,7 @@ export default function CategoryTabs({
               alt={category.category}
               className="size-9"
               loading="lazy"
+              decoding="async"
             />
             <span className="text-[8pt] w-18">{category.category}</span>
           </button>

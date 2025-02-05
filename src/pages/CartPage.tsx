@@ -34,6 +34,7 @@ const CartPage = () => {
                         alt={cartItem.item.title}
                         className="w-16 h-16 rounded-lg object-cover"
                         loading="lazy"
+                        decoding="async"
                       />
                       <div>
                         <h3 className="text-lg font-semibold">

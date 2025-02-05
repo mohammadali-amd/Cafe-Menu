@@ -64,22 +64,22 @@
             {
                "title": "نوشابه کوکاکولا",
                "price": 200000,
-               "image": "/icons/iced-coffee.png"
+               "image": "/icons/soda-bottle.png"
             },
             {
                "title": "لیموناد",
                "price": 150000,
-               "image": "/icons/iced-coffee.png"
+               "image": "/icons/juice.png"
             },
             {
                "title": "دوغ",
                "price": 150000,
-               "image": "/icons/iced-coffee.png"
+               "image": "/icons/milk-bottle.png"
             },
             {
                "title": "آب معدنی",
                "price": 50000,
-               "image": "/icons/iced-coffee.png"
+               "image": "/icons/water.png"
             }
          ]
       },

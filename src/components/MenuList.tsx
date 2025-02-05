@@ -23,6 +23,7 @@ export default function MenuList({ items }: { items: MenuItem[] }) {
                     alt={item.title}
                     className="w-16 h-16 rounded-lg object-cover"
                     loading="lazy"
+                    decoding="async"
                   />
                 )}
                 <div>

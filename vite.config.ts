@@ -56,7 +56,7 @@ export default defineConfig({
         name: "Cafe Menu",
         short_name: "CafeMenu",
         description: "Digital menu for cafe restaurant",
-        theme_color: "#000000",
+        theme_color: "#292524",
         background_color: "#000000",
         display: "standalone",
         scope: "/",
