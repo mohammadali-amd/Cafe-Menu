@@ -1,9 +1,9 @@
 {
-  "name": "Cafe Menu",
-  "short_name": "CafeMenu",
-  "description": "Digital menu for cafe restaurant",
+  "name": "سفره خانه سنتی کیان",
+  "short_name": "منو کافه کیان",
+  "description": "منوی آنلاین سفره خانه سنتی کیان",
   "theme_color": "#292524",
-  "background_color": "#000000",
+  "background_color": "#292524",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",

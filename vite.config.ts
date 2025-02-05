@@ -9,13 +9,13 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["/icons/icon144x144.png"],
+      includeAssets: ["/icons/icon144x144.png", "/Fonts/Vazirmatn-Regular.ttf"],
       devOptions: {
         enabled: true, // Enable PWA in development mode
         type: "module",
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,png,svg,ico}"], // Cache all static assets
+        globPatterns: ["**/*.{js,css,html,png,svg,ico,ttf}"], // Cache all static assets
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/api\.example\.com\/.*/, // Cache API requests
@@ -40,6 +40,17 @@ export default defineConfig({
             },
           },
           {
+            urlPattern: /\.(woff2|woff|ttf|eot|otf)/, // Local fonts
+            handler: "CacheFirst",
+            options: {
+              cacheName: "font-cache",
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+              },
+            },
+          },
+          {
             urlPattern: /\/data\/menu\.json/, // Cache your menu.json
             handler: "NetworkFirst", // Use network-first strategy
             options: {
@@ -53,18 +64,18 @@ export default defineConfig({
         ],
       },
       manifest: {
-        name: "Cafe Menu",
-        short_name: "CafeMenu",
-        description: "Digital menu for cafe restaurant",
+        name: "سفره خانه سنتی کیان",
+        short_name: "منو کافه کیان",
+        description: "منوی آنلاین سفره خانه سنتی کیان",
         theme_color: "#292524",
-        background_color: "#000000",
+        background_color: "#292524",
         display: "standalone",
         scope: "/",
         start_url: "/",
         icons: [
           {
             src: "/icons/icon144x144.png",
-            sizes: "128x128",
+            sizes: "144x144",
             type: "image/png",
           },
         ],
