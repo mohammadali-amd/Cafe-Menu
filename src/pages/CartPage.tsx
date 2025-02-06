@@ -13,7 +13,7 @@ const CartPage = () => {
 
   return (
     <div>
-      <h1 className="text-2xl text-center font-bold mb-4 text-white bg-stone-800 p-4">
+      <h1 className="pt-20 text-2xl text-center font-bold mb-4 text-white bg-stone-800 p-4">
         لیست سفارشات
       </h1>
       <div className="p-4">
@@ -40,7 +40,7 @@ const CartPage = () => {
                         <h3 className="text-lg font-semibold">
                           {cartItem.item.title}
                         </h3>
-                        <p className="text-rose-700">
+                        <p className="text-primary">
                           {PersianNumber(cartItem.item.price.toLocaleString())}{" "}
                           تومان
                         </p>
@@ -49,7 +49,7 @@ const CartPage = () => {
                     <div className="flex items-center gap-3">
                       <button
                         onClick={() => decreaseQuantity(cartItem.item)}
-                        className="bg-rose-600 text-white px-3 py-1 rounded"
+                        className="bg-primary text-white px-3 py-1 rounded"
                       >
                         -
                       </button>
@@ -58,7 +58,7 @@ const CartPage = () => {
                       </span>
                       <button
                         onClick={() => addToCart(cartItem.item)}
-                        className="bg-yellow-500 text-white px-3 py-1 rounded"
+                        className="bg-theme text-white px-3 py-1 rounded"
                       >
                         +
                       </button>
@@ -82,7 +82,7 @@ const CartPage = () => {
             <div className="mt-4 flex gap-2">
               <button
                 onClick={clearCart}
-                className="flex-1 bg-rose-700 text-white py-2 rounded-lg"
+                className="flex-1 bg-primary text-white py-2 rounded-lg"
               >
                 حذف تمام سفارشات
               </button>

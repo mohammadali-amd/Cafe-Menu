@@ -6,7 +6,7 @@ export default function MenuList({ items }: { items: MenuItem[] }) {
   const { addToCart, decreaseQuantity, getItemQuantity } = useCart();
 
   return (
-    <div className="grid gap-4 p-4 pt-34">
+    <div className="grid gap-4 p-4 pt-22 pb-18">
       {items.map((item) => {
         const quantity = getItemQuantity(item);
 
@@ -38,7 +38,7 @@ export default function MenuList({ items }: { items: MenuItem[] }) {
                 </div>
               </div>
               <div className="flex flex-col items-end gap-2">
-                <div className="min-w-fit font-bold text-rose-700">
+                <div className="min-w-fit font-bold text-primary">
                   {PersianNumber(item.price.toLocaleString())}{" "}
                   <span className="text-[8pt]">تومان</span>
                 </div>
@@ -46,7 +46,7 @@ export default function MenuList({ items }: { items: MenuItem[] }) {
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => decreaseQuantity(item)}
-                      className="bg-red-500 text-white px-2 py-0.5 rounded text-sm"
+                      className="bg-primary text-white px-2 py-0.5 rounded text-sm"
                     >
                       -
                     </button>
@@ -55,7 +55,7 @@ export default function MenuList({ items }: { items: MenuItem[] }) {
                     </span>
                     <button
                       onClick={() => addToCart(item)}
-                      className="bg-yellow-500 text-white px-2 py-0.5 rounded text-sm"
+                      className="bg-theme text-white px-2 py-0.5 rounded text-sm"
                     >
                       +
                     </button>
@@ -63,7 +63,7 @@ export default function MenuList({ items }: { items: MenuItem[] }) {
                 ) : (
                   <button
                     onClick={() => addToCart(item)}
-                    className="bg-yellow-500 text-white px-2 py-1 rounded text-sm"
+                    className="bg-theme text-white px-4 py-1 rounded text-sm"
                   >
                     افزودن
                   </button>

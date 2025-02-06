@@ -9,7 +9,11 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["/icons/icon144x144.png", "/Fonts/Vazirmatn-Regular.ttf"],
+      includeAssets: [
+        "/icons/coffee-cup-256x256.png",
+        "/icons/icon144x144.png",
+        "/Fonts/Vazirmatn-Regular.ttf",
+      ],
       devOptions: {
         enabled: true, // Enable PWA in development mode
         type: "module",
@@ -76,6 +80,11 @@ export default defineConfig({
           {
             src: "/icons/icon144x144.png",
             sizes: "144x144",
+            type: "image/png",
+          },
+          {
+            src: "/icons/coffee-cup-256x256.png",
+            sizes: "256x256",
             type: "image/png",
           },
         ],

@@ -12,7 +12,7 @@ export default function CategoryTabs({
   onSelectCategory,
 }: CategoryTabsProps) {
   return (
-    <div className="fixed top-0 left-0 right-0 bg-stone-800 border-t border-stone-950 shadow-md">
+    <div className="fixed bottom-0 left-0 right-0 bg-stone-800 border-t border-stone-950 shadow-md">
       <div className="flex overflow-x-auto py-2 px-4 md:justify-center gap-4 md:gap-10">
         {categories.map((category) => (
           <button
@@ -20,8 +20,8 @@ export default function CategoryTabs({
             onClick={() => onSelectCategory(category)}
             className={`flex flex-col justify-center items-center gap-1 px-4 py-2 rounded-full size-22 whitespace-nowrap ${
               selectedCategory.category === category.category
-                ? "bg-rose-700 text-white"
-                : "bg-yellow-500 hover:bg-yellow-600"
+                ? "bg-primary text-white"
+                : "bg-theme hover:bg-secondary duration-200"
             }`}
           >
             <img

@@ -16,7 +16,7 @@ export default function BottomNavigation({
   const { totalItems } = useCart();
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-stone-800 border-t border-stone-950 shadow-lg">
+    <div className="fixed top-0 left-0 right-0 bg-stone-800 border-t border-stone-950 shadow-lg">
       <div className="flex">
         {pages.map((page) => (
           <button
@@ -31,7 +31,7 @@ export default function BottomNavigation({
             <div className="relative">
               <img src={page.image} alt={page.title} className="size-6" />
               {page.title === "سفارشات" && totalItems > 0 && (
-                <span className="absolute top-0 right-5 bg-rose-700 text-white rounded-full text-xs flex justify-center items-center size-4.5">
+                <span className="absolute top-0 right-5 bg-primary text-white rounded-full text-xs flex justify-center items-center size-4.5">
                   {PersianNumber(totalItems.toString())}
                 </span>
               )}

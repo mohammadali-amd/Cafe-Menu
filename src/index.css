@@ -6,6 +6,12 @@
       url("/Fonts/Vazirmatn-Regular.ttf") format("truetype");
 }
 
+@theme {
+   --color-theme: #F1AC18;
+   --color-primary: #CC080B;
+   --color-secondary: #F25B0A;
+ }
+
 body{
    font-family: Vazirmatn;
 }
