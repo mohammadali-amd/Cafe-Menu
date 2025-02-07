@@ -119,17 +119,17 @@
             {
                "title": "نوشابه کوکا قوطی",
                "price": 200000,
-               "image": "/icons/soda-bottle.png"
+               "image": "/icons/can.png"
             },
             {
                "title": "نوشابه فانتا قوطی",
                "price": 200000,
-               "image": "/icons/soda-bottle.png"
+               "image": "/icons/can.png"
             },
             {
                "title": "نوشابه اسپرایت قوطی",
                "price": 200000,
-               "image": "/icons/soda-bottle.png"
+               "image": "/icons/can.png"
             },
             {
                "title": "نوشابه کوکا پت",
@@ -154,7 +154,7 @@
             {
                "title": "انرژی زا",
                "price": 150000,
-               "image": "/icons/juice.png"
+               "image": "/icons/can.png"
             },
             {
                "title": "دوغ آبعلی - لیوانی",
@@ -516,12 +516,18 @@
             {
                "title": "سالاد سزار",
                "price": 500000,
-               "image": "/icons/burger.png"
+               "image": "/icons/salad.png"
             },
             {
                "title": "پاستا آلفردو",
                "price": 500000,
-               "image": "/icons/burger.png"
+               "image": "/icons/spaghetti.png"
+            },
+            
+            {
+               "title": "بیف آلفردو",
+               "price": 400000,
+               "image": "/icons/spaghetti.png"
             },
             {
                "title": "چیکن برگر",
@@ -534,18 +540,8 @@
                "image": "/icons/burger.png"
             },
             {
-               "title": "استیک مرغ",
-               "price": 500000,
-               "image": "/icons/burger.png"
-            },
-            {
                "title": "دوبل برگر",
                "price": 100000,
-               "image": "/icons/burger.png"
-            },
-            {
-               "title": "بیف آلفردو",
-               "price": 400000,
                "image": "/icons/burger.png"
             },
             {
@@ -554,14 +550,14 @@
                "image": "/icons/burger.png"
             },
             {
-               "title": "وجینات",
-               "price": 100000,
-               "image": "/icons/burger.png"
+               "title": "استیک مرغ",
+               "price": 500000,
+               "image": "/icons/meat.png"
             },
             {
                "title": "استیک گوشت",
                "price": 100000,
-               "image": "/icons/burger.png"
+               "image": "/icons/meat.png"
             }
          ]
       },
