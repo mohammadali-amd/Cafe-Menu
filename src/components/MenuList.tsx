@@ -38,10 +38,10 @@ export default function MenuList({ items }: { items: MenuItem[] }) {
                 </div>
               </div>
               <div className="flex flex-col items-end gap-2">
-                <div className="min-w-fit font-bold text-primary">
+                {/* <div className="min-w-fit font-bold text-primary">
                   {PersianNumber(item.price.toLocaleString())}{" "}
                   <span className="text-[8pt]">تومان</span>
-                </div>
+                </div> */}
                 {quantity > 0 ? (
                   <div className="flex items-center gap-2">
                     <button
@@ -63,7 +63,7 @@ export default function MenuList({ items }: { items: MenuItem[] }) {
                 ) : (
                   <button
                     onClick={() => addToCart(item)}
-                    className="bg-theme text-white px-4 py-1 rounded text-sm"
+                    className="bg-theme text-white px-4 py-2 rounded text-sm"
                   >
                     افزودن
                   </button>

@@ -9,31 +9,36 @@ const InformationPage = () => {
       <div className="p-4">
         <div className="flex flex-col bg-stone-200 rounded-lg px-6 py-2 divide-y divide-stone-700">
           <div className="flex flex-col gap-2 py-3">
-            <h3 className="font-semibold text-2xl">تلفن</h3>
+            <h3 className="font-semibold text-2xl text-primary">تلفن</h3>
             <a href="tel:09121827250" className="text-lg">
               {PersianNumber("09121827250")}
             </a>
           </div>
           <div className="flex flex-col gap-2 py-3">
-            <h3 className="font-semibold text-2xl">ساعت کاری</h3>
+            <h3 className="font-semibold text-2xl text-primary">ساعت کاری</h3>
             <p className="text-lg">
               از ساعت {PersianNumber("8")} صبح تا {PersianNumber("12")} شب
             </p>
           </div>
           <div className="flex flex-col gap-2 py-3">
-            <h3 className="font-semibold text-2xl">آدرس</h3>
+            <h3 className="font-semibold text-2xl text-primary">آدرس</h3>
             <p className="text-lg">
               قزوین، میدان مینودر، جاده وزیران، روبروی تالار کهربا، سفره خانه
               کیان
             </p>
           </div>
           <div className="flex flex-col gap-2 py-3">
-            <h3 className="font-semibold text-2xl">اینستاگرام</h3>
-            <a href="" dir="ltr" className="text-lg">
+            <h3 className="font-semibold text-2xl text-primary">اینستاگرام</h3>
+            <a
+              href="https://www.instagram.com/kian__garden"
+              target="_blank"
+              className="text-lg"
+              dir="ltr"
+            >
               @kian__garden
             </a>
           </div>
-          <div className="py-3 font-bold">
+          <div className="py-3 font-bold text-lg">
             <p>
               انجام تمامی سفارشات
               <br />

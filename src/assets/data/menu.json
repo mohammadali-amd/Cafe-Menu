@@ -7,8 +7,7 @@
             {
                "title": "اسپرسو",
                "price": 200000,
-               "image": "/icons/coffee-cup.png",
-               "ingredients": "Rice, Kebab"
+               "image": "/icons/coffee-cup.png"
             },
             {
                "title": "کارامل ماکیاتو",
@@ -90,25 +89,21 @@
             {
                "title": "بهار نارنج",
                "price": 500000,
-               "ingredients": "Rice, Kebab",
                "image": "/icons/green-tea.png"
             },
             {
                "title": "آویشن",
                "price": 100000,
-               "ingredients": "Vegetables, Onion, Tomatoe",
                "image": "/icons/green-tea.png"
             },
             {
                "title": "دمنوش ترش",
                "price": 400000,
-               "ingredients": "Rice, Chicken",
                "image": "/icons/green-tea.png"
             },
             {
                "title": "بابونه",
                "price": 400000,
-               "ingredients": "Rice, Chicken",
                "image": "/icons/green-tea.png"
             }
          ]
@@ -227,31 +222,26 @@
             {
                "title": "بال کبابی",
                "price": 500000,
-               "ingredients": "Rice, Kebab",
                "image": "/icons/biryani.png"
             },
             {
                "title": "جوجه کباب",
                "price": 100000,
-               "ingredients": "Vegetables, Onion, Tomatoe",
                "image": "/icons/biryani.png"
             },
             {
                "title": "کوبیده",
                "price": 400000,
-               "ingredients": "Rice, Chicken",
                "image": "/icons/biryani.png"
             },
             {
                "title": "نثار",
                "price": 100000,
-               "ingredients": "Vegetables, Onion, Tomatoe",
                "image": "/icons/biryani.png"
             },
             {
                "title": "وزیری",
                "price": 100000,
-               "ingredients": "Vegetables, Onion, Tomatoe",
                "image": "/icons/biryani.png"
             }
          ]

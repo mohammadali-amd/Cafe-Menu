@@ -8,7 +8,7 @@ const CartPage = () => {
     decreaseQuantity,
     clearCart,
     totalItems,
-    totalPrice,
+    // totalPrice,
   } = useCart();
 
   return (
@@ -40,10 +40,10 @@ const CartPage = () => {
                         <h3 className="text-lg font-semibold">
                           {cartItem.item.title}
                         </h3>
-                        <p className="text-primary">
+                        {/* <p className="text-primary">
                           {PersianNumber(cartItem.item.price.toLocaleString())}{" "}
                           تومان
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -73,10 +73,10 @@ const CartPage = () => {
                 <span>تعداد سفارشات :</span>
                 <span>{PersianNumber(totalItems.toString())}</span>
               </div>
-              <div className="flex justify-between text-white mt-2">
+              {/* <div className="flex justify-between text-white mt-2">
                 <span>مجموع قیمت :</span>
                 <span>{PersianNumber(totalPrice.toLocaleString())} تومان</span>
-              </div>
+              </div> */}
             </div>
 
             <div className="mt-4 flex gap-2">
