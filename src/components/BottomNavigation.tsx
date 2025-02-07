@@ -16,7 +16,7 @@ export default function BottomNavigation({
   const { totalItems } = useCart();
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-stone-800 border-t border-stone-950 shadow-lg">
+    <div className="fixed top-0 left-0 right-0 bg-stone-800 border-b border-stone-950 shadow-lg">
       <div className="flex">
         {pages.map((page) => (
           <button

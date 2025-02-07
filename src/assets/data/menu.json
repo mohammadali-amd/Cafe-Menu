@@ -285,21 +285,6 @@
                "image": "/icons/green-tea.png"
             },
             {
-               "title": "دمنوش آرامش",
-               "price": 400000,
-               "image": "/icons/green-tea.png"
-            },
-            {
-               "title": "دمنوش انرژی",
-               "price": 400000,
-               "image": "/icons/green-tea.png"
-            },
-            {
-               "title": "دمنوش تقویتی",
-               "price": 400000,
-               "image": "/icons/green-tea.png"
-            },
-            {
                "title": "چای انگلیسی",
                "price": 400000,
                "image": "/icons/green-tea.png"
@@ -396,7 +381,7 @@
                "image": "/icons/hookah.png"
             },
             {
-               "title": "بلوبری آدامس دارچین",
+               "title": "آدامس دارچین",
                "price": 100000,
                "image": "/icons/hookah.png"
             },
@@ -468,22 +453,22 @@
                "image": "/icons/biryani.png"
             },
             {
-               "title": "کباب ترش",
+               "title": "چلو کباب ترش",
                "price": 500000,
                "image": "/icons/biryani.png"
             },
             {
-               "title": "جوجه ترش",
+               "title": "چلو جوجه ترش",
                "price": 500000,
                "image": "/icons/biryani.png"
             },
             {
-               "title": "جوجه ماستی",
+               "title": "چلو جوجه ماستی",
                "price": 500000,
                "image": "/icons/biryani.png"
             },
             {
-               "title": "خوراک کباب",
+               "title": "خوراک کباب کوبیده",
                "price": 500000,
                "image": "/icons/biryani.png"
             },
@@ -582,11 +567,6 @@
             },
             {
                "title": "پيتزا پپروني",
-               "price": 500000,
-               "image": "/icons/pizza.png"
-            },
-            {
-               "title": "پيتزا ويژه فارست",
                "price": 500000,
                "image": "/icons/pizza.png"
             },
