@@ -17,7 +17,7 @@ const InformationPage = () => {
           <div className="flex flex-col gap-2 py-3">
             <h3 className="font-semibold text-2xl text-primary">ساعت کاری</h3>
             <p className="text-lg">
-              از ساعت {PersianNumber("8")} صبح تا {PersianNumber("12")} شب
+              از ساعت {PersianNumber("10")} صبح تا {PersianNumber("12")} شب
             </p>
           </div>
           <div className="flex flex-col gap-2 py-3">

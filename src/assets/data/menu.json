@@ -1,7 +1,7 @@
 {
    "categories": [
       {
-         "category":"نوشیدنی گرم",
+         "category":"قهوه گرم",
          "image": "/icons/coffee-cup.png",
          "items": [
             {
@@ -43,25 +43,106 @@
                "title": "نسکافه",
                "price": 150000,
                "image": "/icons/coffee-cup.png"
-            },
+            }
+         ]
+      },
+      {
+         "category":"نوشیدنی گرم",
+         "image": "/icons/coffee.png",
+         "items": [
             {
                "title": "هات چاکلت",
                "price": 150000,
-               "image": "/icons/coffee-cup.png"
+               "image": "/icons/coffee.png"
+            },
+            {
+               "title": "وایت چاکلت",
+               "price": 150000,
+               "image": "/icons/coffee.png"
+            },
+            {
+               "title": "آیس چاکلت",
+               "price": 150000,
+               "image": "/icons/coffee.png"
             },
             {
                "title": "چای",
                "price": 150000,
-               "image": "/icons/coffee-cup.png"
+               "image": "/icons/coffee.png"
+            },
+            {
+               "title": "چای سبز",
+               "price": 150000,
+               "image": "/icons/coffee.png"
+            },
+            {
+               "title": "چای کوهی",
+               "price": 150000,
+               "image": "/icons/coffee.png"
+            },
+            {
+               "title": "ماسالا",
+               "price": 150000,
+               "image": "/icons/coffee.png"
+            },
+            {
+               "title": "ماسالا رژیمی",
+               "price": 150000,
+               "image": "/icons/coffee.png"
+            },
+            {
+               "title": "شیر با سیروپ",
+               "price": 150000,
+               "image": "/icons/coffee.png"
+            },
+            {
+               "title": "شیر عسل دارچین",
+               "price": 150000,
+               "image": "/icons/coffee.png"
+            },
+            {
+               "title": "شیر نوتلا",
+               "price": 150000,
+               "image": "/icons/coffee.png"
+            },
+            {
+               "title": "شیر نسکافه",
+               "price": 150000,
+               "image": "/icons/coffee.png"
             }
          ]
       },
       {
          "category":"نوشیدنی سرد",
-         "image": "/icons/iced-coffee.png",
+         "image": "/icons/juice.png",
          "items": [
             {
-               "title": "نوشابه کوکاکولا",
+               "title": "نوشابه کوکا قوطی",
+               "price": 200000,
+               "image": "/icons/soda-bottle.png"
+            },
+            {
+               "title": "نوشابه فانتا قوطی",
+               "price": 200000,
+               "image": "/icons/soda-bottle.png"
+            },
+            {
+               "title": "نوشابه اسپرایت قوطی",
+               "price": 200000,
+               "image": "/icons/soda-bottle.png"
+            },
+            {
+               "title": "نوشابه کوکا پت",
+               "price": 200000,
+               "image": "/icons/soda-bottle.png"
+            },
+            {
+               "title": "نوشابه فانتا پت",
+               "price": 200000,
+               "image": "/icons/soda-bottle.png"
+            },
+            {
+               "title": "نوشابه اسپرایت پت",
                "price": 200000,
                "image": "/icons/soda-bottle.png"
             },
@@ -71,7 +152,12 @@
                "image": "/icons/juice.png"
             },
             {
-               "title": "دوغ",
+               "title": "انرژی زا",
+               "price": 150000,
+               "image": "/icons/juice.png"
+            },
+            {
+               "title": "دوغ آبعلی - لیوانی",
                "price": 150000,
                "image": "/icons/milk-bottle.png"
             },
@@ -79,6 +165,93 @@
                "title": "آب معدنی",
                "price": 50000,
                "image": "/icons/water.png"
+            }
+         ]
+      },
+      {
+         "category":"اسموتی ها",
+         "image": "/icons/smoothie.png",
+         "items": [
+            {
+               "title": "موهیتو",
+               "price": 200000,
+               "image": "/icons/smoothie.png"
+            },
+            {
+               "title": "رد موهیتو",
+               "price": 200000,
+               "image": "/icons/smoothie.png"
+            },
+            {
+               "title": "مجیکال رد",
+               "price": 200000,
+               "image": "/icons/smoothie.png"
+            },
+            {
+               "title": "رد بری",
+               "price": 200000,
+               "image": "/icons/smoothie.png"
+            },
+            {
+               "title": "گرین",
+               "price": 200000,
+               "image": "/icons/smoothie.png"
+            },
+            {
+               "title": "انبه شاتوت",
+               "price": 200000,
+               "image": "/icons/smoothie.png"
+            },
+            {
+               "title": "تراپیکال",
+               "price": 150000,
+               "image": "/icons/smoothie.png"
+            },
+            {
+               "title": "پینکی",
+               "price": 150000,
+               "image": "/icons/smoothie.png"
+            }
+         ]
+      },
+      {
+         "category":"ماکتل ها",
+         "image": "/icons/mocktail.png",
+         "items": [
+            {
+               "title": "رز لایم",
+               "price": 200000,
+               "image": "/icons/mocktail.png"
+            },
+            {
+               "title": "سان رایز",
+               "price": 200000,
+               "image": "/icons/mocktail.png"
+            },
+            {
+               "title": "بهشت",
+               "price": 200000,
+               "image": "/icons/mocktail.png"
+            },
+            {
+               "title": "اسپرینگ",
+               "price": 200000,
+               "image": "/icons/mocktail.png"
+            },
+            {
+               "title": "لیموناد",
+               "price": 200000,
+               "image": "/icons/mocktail.png"
+            },
+            {
+               "title": "بلو هاوایی",
+               "price": 200000,
+               "image": "/icons/mocktail.png"
+            },
+            {
+               "title": "کوکو لایم",
+               "price": 150000,
+               "image": "/icons/mocktail.png"
             }
          ]
       },
@@ -103,6 +276,56 @@
             },
             {
                "title": "بابونه",
+               "price": 400000,
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "دمنوش گل گاوزبان",
+               "price": 400000,
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "دمنوش آرامش",
+               "price": 400000,
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "دمنوش انرژی",
+               "price": 400000,
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "دمنوش تقویتی",
+               "price": 400000,
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "چای انگلیسی",
+               "price": 400000,
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "چای زعفران",
+               "price": 400000,
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "چای فلوس",
+               "price": 400000,
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "چای ترش",
+               "price": 400000,
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "لیمو عسل زنجبیل",
+               "price": 400000,
+               "image": "/icons/green-tea.png"
+            },
+            {
+               "title": "چای دارچین",
                "price": 400000,
                "image": "/icons/green-tea.png"
             }
@@ -138,7 +361,7 @@
                "image": "/icons/hookah.png"
             },
             {
-               "title": "لیدی کلیر",
+               "title": "لیدی کیلر",
                "price": 100000,
                "image": "/icons/hookah.png"
             },
@@ -173,7 +396,17 @@
                "image": "/icons/hookah.png"
             },
             {
-               "title": "بلوبریآدامس دارچین",
+               "title": "بلوبری آدامس دارچین",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "آدامس نعناع",
+               "price": 100000,
+               "image": "/icons/hookah.png"
+            },
+            {
+               "title": "کوکاکولا",
                "price": 100000,
                "image": "/icons/hookah.png"
             },
@@ -212,6 +445,11 @@
                "title": "سیب زمینی کوچک",
                "price": 100000,
                "image": "/icons/fried-potatoes.png"
+            },
+            {
+               "title": "سیب زمینی با سس قارچ",
+               "price": 100000,
+               "image": "/icons/fried-potatoes.png"
             }
          ]
       },
@@ -225,17 +463,42 @@
                "image": "/icons/biryani.png"
             },
             {
-               "title": "جوجه کباب",
+               "title": "بال مکزیکی",
+               "price": 500000,
+               "image": "/icons/biryani.png"
+            },
+            {
+               "title": "کباب ترش",
+               "price": 500000,
+               "image": "/icons/biryani.png"
+            },
+            {
+               "title": "جوجه ترش",
+               "price": 500000,
+               "image": "/icons/biryani.png"
+            },
+            {
+               "title": "جوجه ماستی",
+               "price": 500000,
+               "image": "/icons/biryani.png"
+            },
+            {
+               "title": "خوراک کباب",
+               "price": 500000,
+               "image": "/icons/biryani.png"
+            },
+            {
+               "title": "چلو جوجه کباب",
                "price": 100000,
                "image": "/icons/biryani.png"
             },
             {
-               "title": "کوبیده",
+               "title": "چلو کوبیده",
                "price": 400000,
                "image": "/icons/biryani.png"
             },
             {
-               "title": "نثار",
+               "title": "چلو نثار",
                "price": 100000,
                "image": "/icons/biryani.png"
             },
@@ -243,6 +506,118 @@
                "title": "وزیری",
                "price": 100000,
                "image": "/icons/biryani.png"
+            }
+         ]
+      },
+      {
+         "category":"غذاهای فرنگی",
+         "image": "/icons/burger.png",
+         "items": [
+            {
+               "title": "سالاد سزار",
+               "price": 500000,
+               "image": "/icons/burger.png"
+            },
+            {
+               "title": "پاستا آلفردو",
+               "price": 500000,
+               "image": "/icons/burger.png"
+            },
+            {
+               "title": "چیکن برگر",
+               "price": 500000,
+               "image": "/icons/burger.png"
+            },
+            {
+               "title": "برگر",
+               "price": 500000,
+               "image": "/icons/burger.png"
+            },
+            {
+               "title": "استیک مرغ",
+               "price": 500000,
+               "image": "/icons/burger.png"
+            },
+            {
+               "title": "دوبل برگر",
+               "price": 100000,
+               "image": "/icons/burger.png"
+            },
+            {
+               "title": "بیف آلفردو",
+               "price": 400000,
+               "image": "/icons/burger.png"
+            },
+            {
+               "title": "میکس برگر",
+               "price": 100000,
+               "image": "/icons/burger.png"
+            },
+            {
+               "title": "وجینات",
+               "price": 100000,
+               "image": "/icons/burger.png"
+            },
+            {
+               "title": "استیک گوشت",
+               "price": 100000,
+               "image": "/icons/burger.png"
+            }
+         ]
+      },
+      {
+         "category":"پیتزا",
+         "image": "/icons/pizza.png",
+         "items": [
+            {
+               "title": "پيتزا استيک",
+               "price": 500000,
+               "image": "/icons/pizza.png"
+            },
+            {
+               "title": "پيتزا چيکن",
+               "price": 500000,
+               "image": "/icons/pizza.png"
+            },
+            {
+               "title": "پيتزا چيکن پستو",
+               "price": 500000,
+               "image": "/icons/pizza.png"
+            },
+            {
+               "title": "پيتزا پپروني",
+               "price": 500000,
+               "image": "/icons/pizza.png"
+            },
+            {
+               "title": "پيتزا ويژه فارست",
+               "price": 500000,
+               "image": "/icons/pizza.png"
+            },
+            {
+               "title": "پيتزا استيک آلفردو",
+               "price": 500000,
+               "image": "/icons/pizza.png"
+            },
+            {
+               "title": "پيتزا چيکن آلفردو",
+               "price": 500000,
+               "image": "/icons/pizza.png"
+            },
+            {
+               "title": "پيتزا بيکن",
+               "price": 500000,
+               "image": "/icons/pizza.png"
+            },
+            {
+               "title": "پيتزا ميکس",
+               "price": 500000,
+               "image": "/icons/pizza.png"
+            },
+            {
+               "title": "پيتزا استيک پستو",
+               "price": 500000,
+               "image": "/icons/pizza.png"
             }
          ]
       }
