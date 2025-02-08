@@ -8,32 +8,31 @@ const InformationPage = () => {
         سفره خانه سنتی کیان
       </h1>
 
-      <div className="relative p-4">
-        <div className="absolute top-8 right-8">
-          <DarkModeSwitch />
-        </div>
-        <div className="flex flex-col bg-background-2 text-opposite rounded-xl p-6 divide-y divide-stone-700">
+      <div className="p-4">
+        <div className="flex flex-col bg-background-2 text-opposite rounded-xl px-6 py-4 divide-y divide-stone-700">
           <div className="flex flex-col gap-2 py-3">
-            <h3 className="font-semibold text-2xl text-primary">تلفن</h3>
+            <h3 className="font-semibold text-2xl text-secondary">تلفن</h3>
             <a href="tel:09121827250" className="text-lg">
               {PersianNumber("09121827250")}
             </a>
           </div>
           <div className="flex flex-col gap-2 py-3">
-            <h3 className="font-semibold text-2xl text-primary">ساعت کاری</h3>
+            <h3 className="font-semibold text-2xl text-secondary">ساعت کاری</h3>
             <p className="text-lg">
               از ساعت {PersianNumber("10")} صبح تا {PersianNumber("12")} شب
             </p>
           </div>
           <div className="flex flex-col gap-2 py-3">
-            <h3 className="font-semibold text-2xl text-primary">آدرس</h3>
+            <h3 className="font-semibold text-2xl text-secondary">آدرس</h3>
             <p className="text-lg">
               قزوین، میدان مینودر، جاده وزیران، روبروی تالار کهربا، سفره خانه
               کیان
             </p>
           </div>
           <div className="flex flex-col gap-2 py-3">
-            <h3 className="font-semibold text-2xl text-primary">اینستاگرام</h3>
+            <h3 className="font-semibold text-2xl text-secondary">
+              اینستاگرام
+            </h3>
             <a
               href="https://www.instagram.com/kian__garden"
               target="_blank"
@@ -51,6 +50,9 @@ const InformationPage = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="mt-4">
+        <DarkModeSwitch />
       </div>
     </div>
   );

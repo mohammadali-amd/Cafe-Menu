@@ -4,7 +4,7 @@ const DarkModeSwitch = () => {
   const { isDarkMode, toggleTheme } = useTheme();
 
   return (
-    <div className="flex justify-center" dir="ltr">
+    <div dir="ltr">
       <button
         onClick={toggleTheme}
         className={`relative inline-flex h-12 w-[100px] items-center rounded-full cursor-pointer transition-colors duration-200 ${
@@ -43,6 +43,10 @@ const DarkModeSwitch = () => {
           )}
         </span>
       </button>
+
+      <p className="text-opposite text-lg">
+        {!isDarkMode ? "حالت روز" : "حالت شب"}
+      </p>
     </div>
   );
 };
