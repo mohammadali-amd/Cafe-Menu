@@ -7,11 +7,30 @@
 }
 
 @theme {
-   --color-theme: #F1AC18;
-   --color-primary: #CC080B;
-   --color-secondary: #F25B0A;
+   --color-theme: #f1ac18;
+   --color-primary: #cc080b;
+   --color-secondary: #f25b0a;
+   --color-foreground: #292524;
+   --color-background-2: #e7e5e4;
+   --color-background: #d6d3d1;
+   --color-border: #e7e5e4;
+   --color-text: #fff;
+   --color-opposite: #000;
  }
-
-body{
+ 
+ .dark {
+   --color-theme: #f1ac18;
+   --color-primary: #cc080b;
+   --color-secondary: #f25b0a;
+   --color-background: #1c1917;
+   --color-background-2: #292524;
+   --color-foreground: #e7e5e4;
+   --color-border: #0c0a09;
+   --color-text: #000;
+   --color-opposite: #fff;
+ }
+ 
+ body {
    font-family: Vazirmatn;
-}
+   @apply bg-background text-text;
+ }

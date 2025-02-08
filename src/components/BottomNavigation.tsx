@@ -1,5 +1,6 @@
 import { pageNavProps } from "../App";
 import { useCart } from "../context/CartContext";
+import { useTheme } from "../context/ThemeContext";
 import { PersianNumber } from "../utils/PersianNumber";
 
 interface CategoryTabsProps {
@@ -14,9 +15,10 @@ export default function BottomNavigation({
   setpageNav,
 }: CategoryTabsProps) {
   const { totalItems } = useCart();
+  const { isDarkMode } = useTheme();
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-stone-800 border-b border-stone-950 shadow-lg">
+    <div className="fixed top-0 left-0 right-0 bg-background-2 shadow-lg text-opposite">
       <div className="flex">
         {pages.map((page) => (
           <button
@@ -24,8 +26,10 @@ export default function BottomNavigation({
             onClick={() => setpageNav(page)}
             className={`flex flex-col justify-center items-center gap-1.5 py-2 w-full ${
               pageNav.title === page.title
-                ? "bg-stone-900"
-                : "hover:bg-stone-700"
+                ? "bg-background"
+                : `${
+                    isDarkMode ? "hover:bg-stone-700" : "hover:bg-stone-400"
+                  } duration-200`
             }`}
           >
             <div className="relative">
@@ -37,7 +41,7 @@ export default function BottomNavigation({
               )}
             </div>
 
-            <span className="text-[10pt] text-white">{page.title}</span>
+            <span className="text-[10pt]">{page.title}</span>
           </button>
         ))}
       </div>

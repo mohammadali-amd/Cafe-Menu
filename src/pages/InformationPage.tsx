@@ -1,13 +1,18 @@
+import DarkModeSwitch from "../components/DarkModeSwitch";
 import { PersianNumber } from "../utils/PersianNumber";
 
 const InformationPage = () => {
   return (
-    <div className="text-center">
-      <h1 className="pt-20 text-center font-bold text-white text-2xl mb-4 bg-stone-800 p-4">
+    <div className="text-center text-text">
+      <h1 className="pt-20 text-center font-bold text-opposite text-2xl mb-4 bg-background-2 p-4">
         سفره خانه سنتی کیان
       </h1>
-      <div className="p-4">
-        <div className="flex flex-col bg-stone-200 rounded-lg px-6 py-2 divide-y divide-stone-700">
+
+      <div className="relative p-4">
+        <div className="absolute top-8 right-8">
+          <DarkModeSwitch />
+        </div>
+        <div className="flex flex-col bg-background-2 text-opposite rounded-xl p-6 divide-y divide-stone-700">
           <div className="flex flex-col gap-2 py-3">
             <h3 className="font-semibold text-2xl text-primary">تلفن</h3>
             <a href="tel:09121827250" className="text-lg">

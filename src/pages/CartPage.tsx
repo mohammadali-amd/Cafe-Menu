@@ -13,19 +13,19 @@ const CartPage = () => {
 
   return (
     <div>
-      <h1 className="pt-20 text-2xl text-center font-bold mb-4 text-white bg-stone-800 p-4">
+      <h1 className="pt-20 text-2xl text-center text-opposite font-bold mb-4 bg-background-2 p-4">
         لیست سفارشات
       </h1>
       <div className="p-4">
         {cartItems.length === 0 ? (
-          <p className="text-white text-center">لیست سفارشات شما خالی است</p>
+          <p className="text-center text-opposite">لیست سفارشات شما خالی است</p>
         ) : (
           <>
-            <div className="space-y-4">
+            <div className="space-y-4 text-white">
               {cartItems.map((cartItem) => (
                 <div
                   key={cartItem.item.title}
-                  className="bg-stone-200 rounded-lg p-4"
+                  className="bg-foreground rounded-full p-4"
                 >
                   <div className="flex justify-between items-center">
                     <div className="flex gap-2 items-center">
@@ -37,7 +37,7 @@ const CartPage = () => {
                         decoding="async"
                       />
                       <div>
-                        <h3 className="text-lg font-semibold">
+                        <h3 className="text-lg text-text font-semibold">
                           {cartItem.item.title}
                         </h3>
                         {/* <p className="text-primary">
@@ -49,16 +49,16 @@ const CartPage = () => {
                     <div className="flex items-center gap-3">
                       <button
                         onClick={() => decreaseQuantity(cartItem.item)}
-                        className="bg-primary text-white px-3 py-1 rounded"
+                        className="bg-primary px-3 py-1 rounded-full flex justify-center items-center w-7 h-7 text-xl"
                       >
                         -
                       </button>
-                      <span className="w-4 text-center text-lg">
+                      <span className="w-4 text-center text-text text-lg">
                         {PersianNumber(cartItem.quantity.toString())}
                       </span>
                       <button
                         onClick={() => addToCart(cartItem.item)}
-                        className="bg-theme text-white px-3 py-1 rounded"
+                        className="bg-theme px-3 py-1 rounded-full flex justify-center items-center w-7 h-7 text-xl"
                       >
                         +
                       </button>
@@ -68,7 +68,7 @@ const CartPage = () => {
               ))}
             </div>
 
-            <div className="mt-6 p-4 bg-stone-700 rounded-lg">
+            <div className="mt-6 p-4 bg-stone-700 rounded-full">
               <div className="flex justify-between text-white">
                 <span>تعداد سفارشات :</span>
                 <span>{PersianNumber(totalItems.toString())}</span>
@@ -82,7 +82,7 @@ const CartPage = () => {
             <div className="mt-4 flex gap-2">
               <button
                 onClick={clearCart}
-                className="flex-1 bg-primary text-white py-2 rounded-lg"
+                className="flex-1 bg-primary text-white py-2 rounded-full"
               >
                 حذف تمام سفارشات
               </button>

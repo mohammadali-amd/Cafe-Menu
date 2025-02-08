@@ -1,0 +1,19 @@
+{
+   "pages": [
+      {
+        "id": 1,
+        "title": "منو",
+        "image": "/icons/menu-button2.png"
+      },
+      {
+        "id": 2,
+        "title": "سفارشات",
+        "image": "/icons/checklist2.png"
+      },
+      {
+        "id": 3,
+        "title": "بیشتر",
+        "image": "/icons/info2.png"
+      }
+    ]
+}

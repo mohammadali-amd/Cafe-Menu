@@ -3,7 +3,9 @@ import BottomNavigation from "./components/BottomNavigation";
 import MenuPage from "./pages/MenuPage";
 import CartPage from "./pages/CartPage";
 import InformationPage from "./pages/InformationPage";
-import pages from "./assets/data/pages.json";
+import pages from "../public/data/pages.json";
+import pagesLight from "../public/data/pages-light.json";
+import { useTheme } from "./context/ThemeContext";
 
 export interface pageNavProps {
   title: string;
@@ -12,7 +14,11 @@ export interface pageNavProps {
 }
 
 export default function App() {
-  const data = pages;
+  const { isDarkMode } = useTheme();
+
+  let data = pages;
+  if (isDarkMode) data = pagesLight;
+
   const [pageNav, setpageNav] = useState<pageNavProps>(data.pages[0]);
 
   const getCurrentPage = () => {
@@ -29,7 +35,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-stone-900">
+    <div className="min-h-screen bg-background">
       <main className="max-w-4xl mx-auto pb-20">{getCurrentPage()}</main>
 
       <BottomNavigation

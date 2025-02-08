@@ -13,13 +13,15 @@ export default defineConfig({
         "/icons/coffee-cup-256x256.png",
         "/icons/icon144x144.png",
         "/Fonts/Vazirmatn-Regular.ttf",
+        "/data/pages.json",
+        "/data/pages-light.json",
       ],
       devOptions: {
         enabled: true, // Enable PWA in development mode
         type: "module",
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,png,svg,ico,ttf}"], // Cache all static assets
+        globPatterns: ["**/*.{js,css,html,png,svg,ico,ttf,json}"], // Cache all static assets
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/api\.example\.com\/.*/, // Cache API requests
@@ -62,6 +64,20 @@ export default defineConfig({
               expiration: {
                 maxEntries: 1, // Cache only one version
                 maxAgeSeconds: 60 * 60 * 24, // Cache for 1 day
+              },
+            },
+          },
+          {
+            urlPattern: /\/data\/pages(-light)?\.json/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "pages-cache",
+              expiration: {
+                maxEntries: 2,
+                maxAgeSeconds: 60 * 60 * 24 * 7,
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
               },
             },
           },
